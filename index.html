@@ -4,23 +4,22 @@
     </header>
     
     <body>
-        
-        <div id="table" ondragover="allowDrop(event)" ondrop="drop(event)">
-            
-                <div class="task" id="aa" draggable="true" ondragstart="dragStart(event)">1</div>
-                <div class="task" id="bb" draggable="true" ondragstart="dragStart(event)">2</div>
-        
-        
-        
+
+        <div id="createTask">
+            <button id="createTaskBtn" onclick="addNewTask()">Create new task</button>
         </div>
         
-        <div id="table" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
-        
-        <div id="createTask">
-            <button onclick="addNewTask()">Create new task</button>
+        <div id="createTable">
+            <button id="createTableBtn" onclick="addNewTable()">Create new table</button>
+        </div>
+
+        <div id="tableContainer">
+
+
         </div>
 
         
     </body>
+    
     <script src="index.js"></script>
 </html>

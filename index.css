@@ -1,10 +1,48 @@
-#table{
-    height: 2000px;
+body{
+    display: flex;
+    background-color: pink;
+    
+}
+
+.newTable{
     width: 500px;
     border: 2px solid black;
     float: left;
     margin: 15px;
-    
+    display: flex;
+    flex-direction: column;
+    background-color: orange;
+}
+
+
+#createTableBtn{
+    position: fixed;
+    left: 200px;
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align:center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+#createTaskBtn{
+    position: fixed;
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align:center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;  
+}
+
+#tableContainer{
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
 }
 
 .task{
@@ -16,12 +54,22 @@
     text-align: center;
     margin-top: 50px;
     font-size: 100px;
+    margin-left: 50px;;
+    margin-bottom: 50px;
 }
 
-#aa{
+#blue{
     background-color: darkblue;
 }
 
-#cc{
+#green{
     background-color: green;
+}
+
+#red{
+    background-color: red;
+}
+
+#cyan{
+    background-color: cyan;
 }
