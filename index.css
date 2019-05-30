@@ -1,0 +1,27 @@
+#table{
+    height: 2000px;
+    width: 500px;
+    border: 2px solid black;
+    float: left;
+    margin: 15px;
+    
+}
+
+.task{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 400px;
+    background-color: red;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 100px;
+}
+
+#aa{
+    background-color: darkblue;
+}
+
+#cc{
+    background-color: green;
+}
