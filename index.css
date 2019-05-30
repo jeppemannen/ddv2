@@ -4,6 +4,10 @@ body{
     
 }
 
+h2{
+    text-align: center;
+}
+
 .newTable{
     width: 500px;
     border: 2px solid black;

@@ -1,4 +1,6 @@
 var id;
+
+
 function allowDrop(ev){
     ev.preventDefault();
 }
@@ -12,7 +14,26 @@ function drop(ev){
 }
 
 
-
+function addNewTable(){
+    let tekstheader = prompt("Navn på table");
+    let new_table = document.createElement("div");
+    new_table.classList.add("newTable");
+    new_table.setAttribute("ondragover", "allowDrop(event)");
+    new_table.setAttribute("ondrop", "drop(event)");
+    document.getElementById("tableContainer").appendChild(new_table);
+    new_table.id = tekstheader;
+    console.log(new_table);
+    
+    let table_header = document.createElement("h2");
+    document.getElementById(tekstheader).appendChild(table_header);
+    
+  
+    let text = document.createTextNode(tekstheader)
+    table_header.appendChild(text);
+    document.getElementById(tekstheader).appendChild(table_header);
+    
+    
+}
 
 function addNewTask(){
     let new_task = document.createElement("div");
@@ -31,13 +52,3 @@ function addNewTask(){
 
 }
 
-function addNewTable(){
-    let new_table = document.createElement("div");
-    new_table.classList.add("newTable");
-    new_table.setAttribute("ondragover", "allowDrop(event)");
-    new_table.setAttribute("ondrop", "drop(event)");
-    document.getElementById("tableContainer").appendChild(new_table);
-    new_table.id = "addedTable"
-    console.log(new_table);
-    
-}
