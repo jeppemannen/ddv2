@@ -1,14 +1,28 @@
+header{
+    display: flex;
+    height: 200px;
+    background-color: red;
+}
+
 body{
     display: flex;
-    background-color: pink;
+    flex-direction: column;
+    background-color: pink; 
+}
+
+#tablecontainer{
+    display: flex;
+    flex-direction: row;
     
 }
+
 
 h2{
     text-align: center;
 }
 
 .newTable{
+    height: 1200px;;
     width: 500px;
     border: 2px solid black;
     float: left;
@@ -33,6 +47,7 @@ h2{
 }
 #createTaskBtn{
     position: fixed;
+    left: 0px;
     background-color: green;
     border: none;
     color: white;

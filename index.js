@@ -44,8 +44,10 @@ function addNewTask(){
     window.onerror = function(message){
         window.confirm("You have to create a table before you add a task.");
     }
+    
+    let taskToTable = prompt("write table to add task to")
 
-    document.getElementById("addedTable").appendChild(new_task);
+    document.getElementById(taskToTable).appendChild(new_task);
     
     let color = prompt("green, blue, cyan, red")
     new_task.id = color;
