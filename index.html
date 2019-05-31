@@ -1,22 +1,36 @@
 <html>
     <link rel="stylesheet" type="text/css" href="index.css">
-    <header>dklsldkgndsklgnsdklgndklsngsl
-    </header>
-    
+        <header>
+
+            
+            <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Create new task</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#" onclick="addTaskTodo()">To Do</a>
+    <a href="#" onclick="addTaskDoing()">Doing</a>
+    <a href="#" onclick="addTaskDone()">Done</a>
+  </div>
+</div>
+            
+            
+            
+        </header>
     <body>
-        <div id="createTask">
-            <button id="createTaskBtn" onclick="addNewTask()">Create new task</button>
-        </div>
-        
-        <div id="createTable">
-            <button id="createTableBtn" onclick="addNewTable()">Create new table</button>
-        </div>
+
 
         <div id="tableContainer">
-
-
+                <div class="table" ondragover="allowDrop(event)" ondrop="drop(event)" id="1"><h2>TODO</h2></div>
+                <div class="table" ondragover="allowDrop(event)" ondrop="drop(event)" id="2"><h2>DOING</h2></div>
+                <div class="table" ondragover="allowDrop(event)" ondrop="drop(event)" id="3"><h2>DONE</h2></div>
+        
         </div>
 
+        
+
+        
+        
+        
+        
         
     </body>
     <footer>
